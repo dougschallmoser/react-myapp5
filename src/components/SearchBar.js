@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    // TODO: <ale sure we use callback from App
+    this.props.onTermSubmit(this.state.term);
   }
 
   render() {
